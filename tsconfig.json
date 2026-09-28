@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "useUnknownInCatchVariables": false,
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+
+    "resolveJsonModule": true,
+
+    "sourceMap": true
+  },
+
+"include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+],
+
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
