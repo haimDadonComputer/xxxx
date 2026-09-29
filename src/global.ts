@@ -1,5 +1,6 @@
 import { Express } from "express";
 import { UserToken } from "./interfaces";
+import { Child } from "hono/jsx";
 
 
 
@@ -16,6 +17,7 @@ declare global {
     var _MAX_FILE_SIZE :number
     var _ALLOWED_EXTENSIONS :Set<string>
     var _ALLOWED_MIME_TYPES :Set<string>
+    var _render :(component: Child)=>Promise<string>
     var _ENV :{
         JWT_SECRET : string
     }
